@@ -80,7 +80,7 @@ module Devise
         flash[:timedout] = true
         attempted_path || scope_path
       else
-        send(scope_path, :format => :json)
+        scope_path
       end
     end
 
